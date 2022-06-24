@@ -1,0 +1,55 @@
+.trend-up{
+    background-color: lightgreen;
+}
+
+.trend-up:after{    
+    content: ' ↑';
+}
+
+.trend-down{
+    background-color: lightcoral;
+}
+
+.trend-down:after{
+    content: ' ↓';
+}
+
+.instrument-list{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.instrument-row{
+    margin: 10px;
+    padding: 10px;
+}
+
+.instrument-row:nth-child(even){
+    background-color: lightgray;
+}
+
+.instrument-info-wrapper{
+    margin: 0 auto;
+    max-width: 900px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .instrument-info-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+.instrument-info{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.margin-left{
+    margin-left: 10px;
+}
